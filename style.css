@@ -4,62 +4,54 @@
 }
 
 .header {
-  margin: 0 auto;
+  padding: 0 50px;
   background-color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.5;
-  max-width: 1200px;
+  max-width: 100%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.header .logo {
-  padding-left: 40px;
-}
-
-.header .menu ul {
+.menu ul {
   display: flex;
   list-style: none;
-  margin-right: 47px;
+  margin-right: 110px;
 }
 
-.header .menu ul li {
+.menu ul li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
   margin: 20px 10px;
+  text-transform: uppercase;
+  color: #000;
 }
 
-.header .menu ul a {
-  text-transform: uppercase;
+.menu a {
   text-decoration: none;
-  font-weight: bold;
   color: #000;
+}
+
+.menu-items {
+  display: block;
 }
 
 .header .menu ul a:hover {
   color: #00acdc;
 }
 
-.is-active {
+a.is-active {
   position: relative;
-  color: red;
+  color: #00acdc;
 }
 
 .is-active:after {
   position: absolute;
   content: "";
   left: 0;
-  top: 34px;
+  top: 30px;
   border: 2px solid #00acdc;
   width: 100%;
   border-radius: 8px;
-}
-
-@media screen and (min-width: 1024) {
-  .header {
-    width: 1024px;
-  }
 }
